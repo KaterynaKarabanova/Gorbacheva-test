@@ -1,0 +1,42 @@
+:root {
+  --background: #7b002c;
+  --logo-color: #f5ffb8;
+  --button-blue-iris: #4d5ae5;
+  --title-color: #ffffff;
+  --modal-color: #38002c;
+  --base-white: #ffffff;
+  --background-modal: rgba(12, 0, 11, 0.22);
+  --transition-duration-250: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  display: flex;
+}
+.container {
+  width: 320px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
