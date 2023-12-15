@@ -17,7 +17,17 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header">
+    <button class="burger-button">
+      <svg width="24" height="24">
+        <use href="./images/symbol-defs.svg#icon-align-justify" class="svg" />
+      </svg>
+    </button>
+    <header class="header open">
+      <button class="burger-close">
+        <svg width="24" height="24">
+          <use href="./images/symbol-defs.svg#icon-close" class="svg" />
+        </svg>
+      </button>
       <a href="#" class="header-logo link">
         <svg width="37" height="37">
           <use href="./images/symbol-defs.svg#icon-logo" />
@@ -36,6 +46,15 @@
             <use href="./images/symbol-defs.svg#icon-product" />
           </svg>
           <p class="header-navigation-text">Product</p>
+          <svg width="16" height="16" class="header-navigation-arrow">
+            <use href="./images/symbol-defs.svg#icon-arrow" />
+          </svg>
+        </li>
+        <li class="header-navigation-item active-navigation-link">
+          <svg width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-customers" />
+          </svg>
+          <p class="header-navigation-text">Customers</p>
           <svg width="16" height="16" class="header-navigation-arrow">
             <use href="./images/symbol-defs.svg#icon-arrow" />
           </svg>
@@ -76,7 +95,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="main">
       <h2 class="table-title">Hello Evano ,</h2>
       <div class="table-wrapper">
         <div class="table-search">
@@ -95,6 +114,7 @@
             />
           </div>
         </div>
+        <div class="table-mobile"></div>
         <table class="table">
           <thead class="table-head">
             <tr class="table-head-line">
@@ -109,7 +129,7 @@
           <tbody class="table-body"></tbody>
         </table>
         <div class="pagination-wrapper">
-          <p>Showing data 1 to 8 of 256K entries</p>
+          <p class="pagination-text">Showing data 1 to 8 of 256K entries</p>
           <div>
             <div id="data-container"></div>
             <div id="pagination-container"></div>
@@ -117,6 +137,7 @@
         </div>
       </div>
     </main>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js" type="module"></script>
     <script src="./js/pagination.js" type="module"></script>

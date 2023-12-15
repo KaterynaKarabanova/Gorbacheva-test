@@ -2,21 +2,17 @@ console.log('hello');
 
 import { data } from './data.js';
 
-const table = document.querySelector('.table');
-
-// const addClientsMarkup = () => {
-//   const markup = [];
-//   console.log(markup);
-//   data.map(({ customerName, company, phoneNumber, email, country, status }) =>
-//     markup.push(`<tr>
-//     <th>${customerName}</th>
-//     <th>${company}</th>
-//     <th>${phoneNumber}</th>
-//     <th>${email}</th>
-//     <th>${country}</th>
-//     <th>${status}</th>
-//     </tr>`)
-//   );
-//   table.innerHTML = markup.join('');
-// };
-// addClientsMarkup();
+const burgerMenu = document.querySelector('.burger-button');
+const buttonClose = document.querySelector('.burger-close');
+const header = document.querySelector('.header');
+const main = document.querySelector('.main');
+const openMenu = () => {
+  header.style.display = 'block';
+  main.style.display = 'none';
+};
+const closeMenu = () => {
+  header.style.display = 'none';
+  main.style.display = 'block';
+};
+burgerMenu.addEventListener('click', openMenu);
+buttonClose.addEventListener('click', closeMenu);
