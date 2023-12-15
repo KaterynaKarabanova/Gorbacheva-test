@@ -1,5 +1,3 @@
-console.log('hello');
-
 import { data } from './data.js';
 
 const burgerMenu = document.querySelector('.burger-button');

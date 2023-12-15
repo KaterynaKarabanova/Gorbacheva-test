@@ -36,7 +36,6 @@ const paginationOptions = {
     table.innerHTML = '';
 
     if (window.innerWidth > 1439) {
-      console.log(data);
       displayedData.map(
         (
           { customerName, company, phoneNumber, email, country, status },
